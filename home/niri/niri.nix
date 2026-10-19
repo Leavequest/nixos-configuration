@@ -37,7 +37,7 @@ let
     spawn-at-startup "noctalia"
 
     layout {
-        gaps 14
+        gaps 2
         center-focused-column "never"
 
         preset-column-widths {
@@ -86,7 +86,7 @@ let
 
     // Rounded corners everywhere
     window-rule {
-        geometry-corner-radius 14
+        geometry-corner-radius 0
         clip-to-geometry true
     }
 
