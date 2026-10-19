@@ -9,9 +9,10 @@
     git
     wget
     fastfetch
-    foot
+    ghostty
     nautilus
     claude-code
+    btop
 
     # Apps
     vesktop

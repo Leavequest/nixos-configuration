@@ -17,7 +17,10 @@
   ] (_: "it_IT.UTF-8");
 
   services.xserver.xkb = {
-    layout = "en";
+    layout = "it,us"; # Italian first, US English second
     variant = "";
+    options = "grp:alt_shift_toggle";
   };
+
+  console.keyMap = "it"; # TTY / early boot
 }
