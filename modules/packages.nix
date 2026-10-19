@@ -11,6 +11,7 @@
     fastfetch
     foot
     nautilus
+    claude-code
 
     # Apps
     vesktop
