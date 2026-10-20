@@ -9,6 +9,7 @@ in
     ./niri.nix
     ./noctalia.nix
     ./ghostty.nix
+    ./icons.nix
     ./foot.nix
   ];
 
