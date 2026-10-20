@@ -39,7 +39,50 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "sonora": "sonora"
+      }
+    },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "sonora",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1789196581,
+        "narHash": "sha256-yJr1Bt4fKkKIpPYbsKGqJ0VFdoDnURgRwuffmBQ2WzY=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "228ecefb6329d5a531b77b46b581a2f0c26ee056",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "sonora": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay"
+      },
+      "locked": {
+        "lastModified": 1792262325,
+        "narHash": "sha256-2g/meBI/VLCyowXWw7NUafsNdT3t/4yNN+KfDC7sdeM=",
+        "owner": "sonorahq",
+        "repo": "sonora",
+        "rev": "716341a227e84ef1e99ea8d1cf387127b93353a8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sonorahq",
+        "repo": "sonora",
+        "type": "github"
       }
     }
   },

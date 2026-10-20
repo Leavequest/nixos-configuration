@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   security.rtkit.enable = true;
@@ -16,5 +16,6 @@
     deepfilternet # ML noise filter
     headsetcontrol
     pavucontrol
+    inputs.sonora.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

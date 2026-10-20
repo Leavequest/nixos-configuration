@@ -37,7 +37,7 @@ let
     spawn-at-startup "noctalia"
 
     layout {
-        gaps 2
+        gaps 4
         center-focused-column "never"
 
         preset-column-widths {
@@ -86,8 +86,8 @@ let
 
     // Rounded corners everywhere
     window-rule {
-        geometry-corner-radius 0
-        clip-to-geometry true
+        geometry-corner-radius 4
+        clip-to-geometry false
     }
 
     // Translucent terminal with blur behind it
@@ -144,8 +144,8 @@ let
         Mod+Shift+Slash { show-hotkey-overlay; }
 
         // Apps and Noctalia
-        Mod+T hotkey-overlay-title="Terminal" { spawn "foot"; }
-        Mod+Return hotkey-overlay-title=null { spawn "foot"; }
+        Mod+T hotkey-overlay-title="Terminal" { spawn "ghostty"; }
+        Mod+Return hotkey-overlay-title=null { spawn "ghostty"; }
         Mod+E hotkey-overlay-title="Files" { spawn "nautilus"; }
         Mod+Space hotkey-overlay-title="Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
         Mod+D hotkey-overlay-title=null { spawn-sh "noctalia msg panel-toggle launcher"; }
@@ -168,6 +168,10 @@ let
         XF86AudioPrev        allow-when-locked=true { spawn-sh "noctalia msg media previous"; }
         XF86MonBrightnessUp   allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
         XF86MonBrightnessDown allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
+
+        Mod+Alt+Down  allow-when-locked=true hotkey-overlay-title="Play / pause" { spawn-sh "noctalia msg media toggle"; }
+        Mod+Alt+Right allow-when-locked=true hotkey-overlay-title="Next track" { spawn-sh "noctalia msg media next"; }
+        Mod+Alt+Left  allow-when-locked=true hotkey-overlay-title="Previous track" { spawn-sh "noctalia msg media previous"; }
 
         // Screenshots
         Print { spawn-sh "noctalia msg screenshot-region"; }

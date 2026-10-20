@@ -13,6 +13,7 @@
     nautilus
     claude-code
     btop
+    fastfetch
 
     # Apps
     vesktop
