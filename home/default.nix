@@ -1,5 +1,5 @@
 {
-  imports = [ ./shell.nix ];
+  imports = [ ./shell.nix ./icons.nix ];
 
   home.username = "leave";
   home.homeDirectory = "/home/leave";
