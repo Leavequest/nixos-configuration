@@ -13,7 +13,8 @@
     nautilus
     claude-code
     btop
-    fastfetch
+    evtest
+    termius
 
     # Apps
     vesktop

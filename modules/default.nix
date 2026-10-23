@@ -4,6 +4,7 @@
     ./locale.nix
     ./desktop.nix
     ./audio.nix
+    ./nvidia.nix
     ./gaming.nix
     ./users.nix
     ./packages.nix
